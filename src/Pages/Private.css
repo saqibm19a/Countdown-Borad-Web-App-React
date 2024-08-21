@@ -1,0 +1,158 @@
+/* Private.css */
+
+/* Main container setup */
+.private-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #1b1d20;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-task {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .add-task input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  .add-task select {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .add-task button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .signout-button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #ff4b5c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signout-button:hover {
+    background-color: #e60023;
+  }
+  
+  /* Columns container styling */
+  .columns-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 2rem;
+    flex: 1;
+    overflow-x: auto;
+  }
+  
+  .column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Task list and item styling */
+  .task-list {
+    flex: 1;
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .task-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .task-item:active {
+    cursor: grabbing;
+    transform: scale(1.03);
+  }
+  
+  .delete-button {
+    border: none;
+    background-color: #ff4b5c;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #e60023;
+  }
+  
